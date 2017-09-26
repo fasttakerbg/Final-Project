@@ -1,176 +1,218 @@
-    @font-face {
-        font-family: BlackJackReg;
-        src: url('./fonts/BLACKJAR.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: Kreon;
-        src: url('./fonts/Kreon-Regular.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: Kreon-Light;
-        src: url('./fonts/Kreon-Light.ttf') format('truetype');
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin: 0;
-        border: 1px solid red
-    }
-    
-    .main-window {
-        border: 1px solid green;
-        width: 960px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-    
-    header,
-    .nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    header {
-        height: 100px;
-        border: 1px solid green;
-        position: relative;
-        background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
-        ;
-    }
-    
-    a:link {
-        text-decoration: none;
-        text-decoration-color: none
-    }
-    
-    nav {
-        box-sizing: border-box;
-        height: 56px;
-        border: 1px solid green;
-    }
-    
-    .nav a {
-        list-style-type: none;
-        text-decoration: none;
-    }
-    
-    ul,
-    li {
-        list-style-type: none;
-    }
-    
-    .site-logo {
-        margin-right: auto;
-        position: relative;
-    }
-    
-    img {
-        padding-top: 30px;
-        padding-left: 35px;
-    }
-    
-    .logo-text {
-        font-family: BlackJackReg;
-        text-decoration: none;
-        position: absolute;
-        top: 28px;
-        font-size: 32px;
-        color: rgb(66, 66, 66);
-    }
-    
-    .slogan-text {
-        text-transform: uppercase;
-        font-family: Kreon;
-        font-size: 12px;
-        font-weight: bold;
-        color: rgb(67, 125, 139);
-        position: relative;
-        top: -5px
-    }
-    
-    li {
-        font-family: Kreon;
-        font-size: 15px;
-        margin-left: 20px;
-        z-index: 2;
-    }
-    
-    .last {
-        padding-right: 30px
-    }
-    
-    .nav {
-        margin-top: 59px;
-    }
-    /* a:visited {
-        text-decoration: none
-    } */
-    
-    a {
-        color: rgb(57, 57, 57);
-    }
-    
-    .first {
-        color: rgb(67, 125, 139);
-        font-weight: 600;
-    }
-    
-    .top-panel {
-        position: relative;
-        top: 0px;
-        right: -530px;
-        height: 30px;
-    }
-    
-    .social-icons {
-        position: absolute;
-        top: -30px;
-        left: -155px;
-    }
-    
-    .search {
-        position: relative;
-        width: 160px;
-        height: 28px;
-        margin-left: 30px;
-        left: -32px;
-    }
-    
-    #search-form {
-        width: 160px;
-    }
-    
-    .search-input {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 11px;
-        font-style: italic;
-        color: rgb(163, 163, 163);
-        text-shadow: 1px 1px #fff;
-        background-image: linear-gradient( rgb(255, 255, 255), rgb(249, 249, 249) 50%);
-        width: 160px;
-        height: 28px;
-        border: none;
-        padding-left: 10px;
-        box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
-    }
-    
-    .search-btn {
-        position: absolute;
-        top: 5px;
-        right: 15px
-    }
-    
-    .social-icons a img {
-        padding: 0;
-        position: relative;
-        top: 35px;
-        right: -90px
-    }
+/* Adding custom fonts  */
+
+@font-face {
+    font-family: BlackJackReg;
+    src: url('./fonts/BLACKJAR.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Kreon;
+    src: url('./fonts/Kreon-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Kreon-Light;
+    src: url('./fonts/Kreon-Light.ttf') format('truetype');
+}
+
+
+/* General element settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 1px solid purple;
+    background-image: url('./pics/background.png')
+}
+
+.main-window {
+    width: 960px;
+    margin: auto;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(57, 57, 57);
+}
+
+a:link {
+    text-decoration: none;
+    text-decoration-color: none
+}
+
+
+/* Top Header container general settings  */
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    position: relative;
+    background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
+}
+
+
+/* Top Header left side logo section  */
+
+.top-header-logo {
+    margin-right: auto;
+    position: relative;
+}
+
+.top-header-logo-img {
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+.top-header-logo-text {
+    font-family: BlackJackReg;
+    text-decoration: none;
+    position: absolute;
+    top: 28px;
+    font-size: 32px;
+    color: rgb(66, 66, 66);
+}
+
+.top-header-slogan-text {
+    text-transform: uppercase;
+    font-family: Kreon;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(67, 125, 139);
+    position: relative;
+    top: -5px
+}
+
+
+/* Top Header Nav */
+
+.top-header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 59px;
+}
+
+.top-header-nav li {
+    font-family: 'Kreon-Light';
+    font-size: 15px;
+    font-weight: 550;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.top-header-nav .first-el {
+    color: rgb(67, 124, 139);
+    font-weight: 600;
+}
+
+.top-header-nav:last-child {
+    padding-right: 30px
+}
+
+
+/* Top Header right top panel section search & social icons */
+
+.top-header-panel {
+    position: relative;
+    top: 0px;
+    right: -530px;
+    height: 30px;
+}
+
+.top-header-social-icons {
+    position: absolute;
+    top: -30px;
+    left: -155px;
+}
+
+.top-header-search {
+    position: relative;
+    width: 160px;
+    height: 28px;
+    margin-left: 30px;
+    left: -41px;
+}
+
+.top-header-search-form {
+    width: 160px;
+}
+
+.top-header-search-input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: rgb(163, 163, 163);
+    text-shadow: 1px 1px #fff;
+    background-image: linear-gradient( rgb(238, 238, 238), rgb(249, 249, 249) 50%);
+    width: 160px;
+    height: 28px;
+    border: none;
+    padding-left: 10px;
+    box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
+}
+
+.top-header-search-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px
+}
+
+.top-header-social-icons a img {
+    padding: 0;
+    position: relative;
+    top: 35px;
+    right: -90px
+}
+
+
+/* Secondary Header settings */
+
+.secondary-header {
+    height: 56px;
+    background-image: linear-gradient(-45deg, rgb(245, 245, 245) 25%, transparent 25%, transparent 50%, rgb(245, 245, 245) 50%, rgb(245, 245, 245) 75%, transparent 75%, transparent);
+    background-size: 8px 8px;
+    border-top: 1px solid transparent;
+    border-image: radial-gradient(circle, rgb(203, 203, 203) 40%, rgb(220, 220, 220) 80%, rgb(232, 232, 232) 20%);
+    border-image-slice: 1;
+    box-shadow: inset 0 7px 6px -6px rgb(225, 225, 225);
+}
+
+.secondary-header-container {
+    padding-left: 23px;
+    display: flex;
+}
+
+
+/* Secondary header nav settings */
+
+.secondary-header-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary-header-nav li {
+    font-family: 'Kreon-Light';
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 21px;
+}
+
+.secondary-header-nav .first-el {
+    color: rgb(67, 125, 139);
+    font-weight: 600;
+}
