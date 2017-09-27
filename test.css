@@ -15,6 +15,11 @@
     src: url('./fonts/Kreon-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: Droid-Sans;
+    src: url('./fonts/DroidSans.ttf') format('truetype');
+}
+
 
 /* General element settings */
 
@@ -25,7 +30,8 @@
 body {
     margin: 0;
     border: 1px solid purple;
-    background-image: url('./pics/background.png')
+    background-image: url('./pics/background.png');
+    box-shadow: 1px black;
 }
 
 .main-window {
@@ -35,6 +41,14 @@ body {
     margin-top: 50px;
     margin-bottom: 100px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+main {
+    flex-grow: 1
 }
 
 ul,
@@ -215,4 +229,109 @@ a:link {
 .secondary-header-nav .first-el {
     color: rgb(67, 125, 139);
     font-weight: 600;
+}
+
+
+/* General Footer settings */
+
+footer {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* Main footer settings */
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 36px;
+}
+
+.main-footer-column {
+    flex-basis: 190px;
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+}
+
+.main-footer-column>span {
+    font-family: 'Kreon-Light';
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/* Main footer first column logo settings */
+
+.main-footer-logo-img {
+    zoom: 70%;
+}
+
+.main-footer-logo-text {
+    float: right;
+    padding-right: 47px;
+    font-family: 'Kreon-Light';
+    font-size: 20.22px;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+}
+
+.main-footer-slogan-text {
+    float: right;
+    font-family: 'Droid-Sans';
+    font-size: 9.1px;
+    text-transform: uppercase;
+    color: rgb(102, 146, 156);
+    font-weight: 600;
+    margin-top: -12px;
+    padding-right: 49px
+}
+
+.main-footer-column:first-child>span {
+    font-family: Kreon;
+    font-size: 12px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    color: rgb(131, 131, 131);
+}
+
+
+/* Main Footer List settings */
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list li {
+    list-style-type: disc;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 16px
+}
+
+.footer-list li:last-child {
+    margin-bottom: 0px;
+}
+
+
+/* Bottom footer settings */
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    font-family: 'Kreon-Light';
+    font-size: 12px;
+    color: rgb(205, 205, 205);
+}
+
+.bottom-footer-dark {
+    color: rgb(146, 146, 146);
 }
