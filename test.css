@@ -381,7 +381,7 @@ footer {
 /* Carousel  bottom points*/
 
 .carousel-indicators {
-    bottom: -12%
+    bottom: -15%
 }
 
 .carousel-indicators li {
@@ -436,4 +436,35 @@ footer {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+
+/* Jumbotron settings */
+
+.main-jumbotron-section {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    max-height: 130px;
+    padding: 0;
+    margin: 0
+}
+
+.main-jumbotron-section h2 {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+}
+
+.main-jumbotron-section p {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    color: rgb(175, 175, 175);
+}
+
+.section-separator {
+    margin-top: 55px;
+    width: 890px;
+}
+
+.main-jumbotron-section+hr {
+    margin-top: 0
 }
