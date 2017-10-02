@@ -41,16 +41,20 @@
                     </div>
                 </div>
 
-                <ul class="top-header-nav">
-                    <li><a href="#" class="first-el">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Page Templates</a></li>
-                    <li><a href="#">Shortcodes</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
+                <ul class="top-header-nav" id="todor">
+                    <li><a href="#" class="first-el ivan">Home</a></li>
+                    <li><a href="#" class=" ivan">About</a></li>
+                    <li><a href="#" class=" ivan">Contact</a></li>
+                    <li><a href="#" class=" ivan">Page Templates</a></li>
+                    <li><a href="#" class=" ivan">Shortcodes</a></li>
+                    <li><a href="#" class=" ivan">Blog</a></li>
 
+
+                </ul>
+
+
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="top-header-display-icon" onclick="myFunction()">&#9776;</a>
             <div class="secondary-header">
                 <ul class="secondary-header-container">
                     <div class="secondary-header-nav">
@@ -121,7 +125,7 @@
                 </span>
             </div>
             <!-- End of CArousel -->
-
+            <!-- Start of Jumbotron  -->
             <div class="jumbotron main-jumbotron-section">
                 <hr class="section-separator">
 
@@ -130,6 +134,57 @@
 
                 <hr class="section-separator">
             </div>
+            <!-- End of Jumbotron  -->
+
+            <!-- Start of Main Section -->
+            <section id="main-content" class="group">
+                <div class="previews">
+                    Travel is the only thing you buy that makes you richer"
+                    <article class="preview">
+                        <h2 class="preview__title">Todor</h2>
+                        <div class="preview__image-container">
+                            <a href="#/posts/{{key}}" class="preview__anchor">
+                                <img src="{{image}}" alt="{{title}}" class="preview__image">
+                                <span class="preview__hover-icon"></span>
+                            </a>
+                        </div>
+                        <p class="preview__summary">Hreavy Metal</p>
+                    </article>
+                    Travel is the only thing you buy that makes you richer"
+                </div>
+                <div class="blog-media">
+                    <aside class="blog-p">
+                        <h4 class="blog-p__title">From The Blog</h4>
+                        <ul class="blog-p__posts">
+                            {{#recentPosts.result}}
+                            <li><a href="{{key}}">{{title}}</a></li>
+                            {{/recentPosts.result}}
+                        </ul>
+                    </aside>
+                    <aside class="media">
+                        <h4 class="media__title">Multi-Media Bar</h4>
+                        <div class="media__bar">
+                            {{#media.result}}
+                            <div class="media__img-container">
+                                <img src="./pics/angkor" alt="{{description}}" class="media__img">
+                                <span class="media__hover-icon"></span>
+                                <div class="media__description">
+                                    <p>{{description}}</p>
+                                    <span class="media__arrow"></span>
+                                </div>
+                            </div>
+                            {{/media.result}}
+                            <ul class="media__nav">
+                                <li><a href="#" class="media__prev">Prev</a></li>
+                                <li><a href="#" class="media__next">Next</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+            <!-- End of MAin Section  -->
+
+
 
         </main>
         <footer>
@@ -177,6 +232,20 @@
             </div>
         </footer>
     </div>
+    <script>
+        function myFunction() {
+
+            var x = document.getElementById("todor");
+            if (x.className === "top-header-nav") {
+
+                x.className += " responsive";
+            } else {
+                x.className = "top-header-nav";
+
+            }
+            console.log('click')
+        }
+    </script>
 </body>
 
 </html>

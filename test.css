@@ -35,13 +35,14 @@ body {
 }
 
 .main-window {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     border-top: 1px solid rgb(255, 255, 255);
     margin-top: 50px;
     margin-bottom: 100px;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: 100vh;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.08);
@@ -73,7 +74,7 @@ a:link {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 100px;
+    max-height: 100px;
     position: relative;
     background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
 }
@@ -136,6 +137,10 @@ a:link {
 
 .top-header-nav:last-child {
     padding-right: 30px
+}
+
+.top-header-display-icon {
+    display: none;
 }
 
 
@@ -230,111 +235,6 @@ a:link {
 .secondary-header-nav .first-el {
     color: rgb(67, 125, 139);
     font-weight: 600;
-}
-
-
-/* General Footer settings */
-
-footer {
-    background-color: rgb(249, 249, 249);
-    border: 1px solid rgb(255, 255, 255);
-}
-
-
-/* Main footer settings */
-
-.main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 36px;
-}
-
-.main-footer-column {
-    flex-basis: 190px;
-    font-family: 'Droid-Sans';
-    font-size: 12px;
-    color: rgb(160, 160, 160);
-}
-
-.main-footer-column>span {
-    font-family: 'Kreon-Light';
-    font-size: 20px;
-    color: rgb(29, 29, 29);
-    display: block;
-    margin-bottom: 20px;
-}
-
-
-/* Main footer first column logo settings */
-
-.main-footer-logo-img {
-    zoom: 70%;
-}
-
-.main-footer-logo-text {
-    float: right;
-    padding-right: 47px;
-    font-family: 'Kreon-Light';
-    font-size: 20.22px;
-    color: rgb(17, 17, 17);
-    text-transform: uppercase;
-}
-
-.main-footer-slogan-text {
-    float: right;
-    font-family: 'Droid-Sans';
-    font-size: 9.1px;
-    text-transform: uppercase;
-    color: rgb(102, 146, 156);
-    font-weight: 600;
-    margin-top: -12px;
-    padding-right: 49px
-}
-
-.main-footer-column:first-child>span {
-    font-family: Kreon;
-    font-size: 12px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    color: rgb(131, 131, 131);
-}
-
-
-/* Main Footer List settings */
-
-.footer-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-list li {
-    list-style-type: disc;
-    padding-right: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 16px
-}
-
-.footer-list li:last-child {
-    margin-bottom: 0px;
-}
-
-
-/* Bottom footer settings */
-
-.bottom-footer {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    font-family: 'Kreon-Light';
-    font-size: 12px;
-    color: rgb(205, 205, 205);
-}
-
-.bottom-footer-dark {
-    color: rgb(146, 146, 146);
 }
 
 
@@ -469,4 +369,201 @@ footer {
     /* margin-top: 55px; */
     width: 890px;
     margin-bottom: 40px;
+}
+
+
+/* General Footer settings */
+
+footer {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* Main footer settings */
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 36px;
+}
+
+.main-footer-column {
+    flex-basis: 190px;
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+}
+
+.main-footer-column>span {
+    font-family: 'Kreon-Light';
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/* Main footer first column logo settings */
+
+.main-footer-logo-img {
+    zoom: 70%;
+}
+
+.main-footer-logo-text {
+    float: right;
+    padding-right: 47px;
+    font-family: 'Kreon-Light';
+    font-size: 20.22px;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+}
+
+.main-footer-slogan-text {
+    float: right;
+    font-family: 'Droid-Sans';
+    font-size: 9.1px;
+    text-transform: uppercase;
+    color: rgb(102, 146, 156);
+    font-weight: 600;
+    margin-top: -12px;
+    padding-right: 49px
+}
+
+.main-footer-column:first-child>span {
+    font-family: Kreon;
+    font-size: 12px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    color: rgb(131, 131, 131);
+}
+
+
+/* Main Footer List settings */
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list li {
+    list-style-type: disc;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 16px
+}
+
+.footer-list li:last-child {
+    margin-bottom: 0px;
+}
+
+
+/* Bottom footer settings */
+
+.bottom-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    font-family: 'Kreon-Light';
+    font-size: 12px;
+    color: rgb(205, 205, 205);
+}
+
+.bottom-footer-dark {
+    color: rgb(146, 146, 146);
+}
+
+@media (min-width: 1100px) {
+    /* tova e defaultniq  */
+}
+
+@media (max-width: 1099px) and (min-width: 800px) {
+    /* Header and Top NAvigation behaviour  */
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: flex;
+        align-items: center;
+        position: none
+    }
+    .top-header-nav {
+        position: relative;
+        left: -100px
+    }
+    .top-header-panel {
+        left: 50%
+    }
+}
+
+@media (max-width: 799px) and (min-width: 500px) {
+    /* Header and Top NAvigation behaviour  */
+    .top-header-logo-img {
+        visibility: hidden;
+        float: right
+    }
+    .top-header-logo-text {
+        top: 0px
+    }
+    .secondary-header {
+        display: none
+    }
+    .top-header-panel {
+        right: 0
+    }
+    .top-header-nav {
+        position: relative;
+        top: -70px
+    }
+    .carousel-control {
+        padding-top: 10%
+    }
+}
+
+@media (max-width: 499px) {
+    /* Header and Top NAvigation behaviour  */
+    .secondary-header {
+        display: none;
+    }
+    .top-header {
+        height: 10px
+    }
+    .top-header-nav {
+        display: none
+    }
+    .top-header-nav li a {
+        z-index: 6;
+        color: orange;
+        background-color: white;
+        font-size: 18px
+    }
+    .top-header-logo-img {
+        display: none
+    }
+    .top-header-logo-text {
+        top: 0px
+    }
+    .top-header-panel {
+        display: none
+    }
+    .top-header-display-icon {
+        display: block;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        float: right;
+    }
+    .responsive {
+        display: block;
+        z-index: 100;
+        position: fixed;
+        float: left;
+    }
+    .carousel-caption {
+        display: none;
+    }
+    .carousel-control {
+        padding-top: 10%
+    }
 }
