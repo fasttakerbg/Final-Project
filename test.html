@@ -139,47 +139,18 @@
             <!-- Start of Main Section -->
             <section id="main-content" class="group">
                 <div class="previews">
-                    Travel is the only thing you buy that makes you richer"
+                    {{#latestSportNews.result}}
                     <article class="preview">
-                        <h2 class="preview__title">Todor</h2>
+                        <h2 class="preview__title">{{title}}</h2>
                         <div class="preview__image-container">
                             <a href="#/posts/{{key}}" class="preview__anchor">
                                 <img src="{{image}}" alt="{{title}}" class="preview__image">
                                 <span class="preview__hover-icon"></span>
                             </a>
                         </div>
-                        <p class="preview__summary">Hreavy Metal</p>
+                        <p class="preview__summary">{{summary}}</p>
                     </article>
-                    Travel is the only thing you buy that makes you richer"
-                </div>
-                <div class="blog-media">
-                    <aside class="blog-p">
-                        <h4 class="blog-p__title">From The Blog</h4>
-                        <ul class="blog-p__posts">
-                            {{#recentPosts.result}}
-                            <li><a href="{{key}}">{{title}}</a></li>
-                            {{/recentPosts.result}}
-                        </ul>
-                    </aside>
-                    <aside class="media">
-                        <h4 class="media__title">Multi-Media Bar</h4>
-                        <div class="media__bar">
-                            {{#media.result}}
-                            <div class="media__img-container">
-                                <img src="./pics/angkor" alt="{{description}}" class="media__img">
-                                <span class="media__hover-icon"></span>
-                                <div class="media__description">
-                                    <p>{{description}}</p>
-                                    <span class="media__arrow"></span>
-                                </div>
-                            </div>
-                            {{/media.result}}
-                            <ul class="media__nav">
-                                <li><a href="#" class="media__prev">Prev</a></li>
-                                <li><a href="#" class="media__next">Next</a></li>
-                            </ul>
-                        </div>
-                    </aside>
+                    {{/latestSportNews.result}}
                 </div>
             </section>
             <!-- End of MAin Section  -->

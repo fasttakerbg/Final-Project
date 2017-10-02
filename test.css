@@ -1,569 +1,595 @@
-/* Adding custom fonts  */
-
-@font-face {
-    font-family: BlackJackReg;
-    src: url('./fonts/BLACKJAR.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Kreon;
-    src: url('./fonts/Kreon-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Kreon-Light;
-    src: url('./fonts/Kreon-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Droid-Sans;
-    src: url('./fonts/DroidSans.ttf') format('truetype');
-}
-
-
-/* General element settings */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    border: 1px solid purple;
-    background-image: url('./pics/background.png');
-    box-shadow: 1px black;
-}
-
-.main-window {
-    max-width: 960px;
-    margin: auto;
-    border-top: 1px solid rgb(255, 255, 255);
-    margin-top: 50px;
-    margin-bottom: 100px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    min-height: 100vh;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.08);
-}
-
-main {
-    flex-grow: 1
-}
-
-ul,
-li {
-    list-style-type: none;
-}
-
-a {
-    color: rgb(57, 57, 57);
-}
-
-a:link {
-    text-decoration: none;
-    text-decoration-color: none
-}
-
-
-/* Top Header container general settings  */
-
-.top-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-height: 100px;
-    position: relative;
-    background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
-}
-
-
-/* Top Header left side logo section  */
-
-.top-header-logo {
-    margin-right: auto;
-    position: relative;
-}
-
-.top-header-logo-img {
-    padding-top: 30px;
-    padding-left: 35px;
-}
-
-.top-header-logo-text {
-    font-family: BlackJackReg;
-    text-decoration: none;
-    position: absolute;
-    top: 28px;
-    font-size: 32px;
-    color: rgb(66, 66, 66);
-}
-
-.top-header-slogan-text {
-    text-transform: uppercase;
-    font-family: Kreon;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(67, 125, 139);
-    position: relative;
-    top: 30px
-}
-
-
-/* Top Header Nav */
-
-.top-header-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 59px;
-}
-
-.top-header-nav li {
-    font-family: 'Kreon-Light';
-    font-size: 15px;
-    font-weight: 550;
-    margin-left: 20px;
-    z-index: 2;
-}
-
-.top-header-nav .first-el {
-    color: rgb(67, 124, 139);
-    font-weight: 600;
-}
-
-.top-header-nav:last-child {
-    padding-right: 30px
-}
-
-.top-header-display-icon {
-    display: none;
-}
-
-
-/* Top Header right top panel section search & social icons */
-
-.top-header-panel {
-    position: relative;
-    top: 0px;
-    right: -530px;
-    height: 30px;
-}
-
-.top-header-social-icons {
-    position: absolute;
-    top: -30px;
-    left: -155px;
-}
-
-.top-header-search {
-    position: relative;
-    width: 160px;
-    height: 28px;
-    margin-left: 30px;
-    left: -41px;
-}
-
-.top-header-search-form {
-    width: 160px;
-}
-
-.top-header-search-input {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 11px;
-    font-style: italic;
-    color: rgb(163, 163, 163);
-    text-shadow: 1px 1px #fff;
-    background-image: linear-gradient( rgb(238, 238, 238), rgb(249, 249, 249) 50%);
-    width: 160px;
-    height: 28px;
-    border: none;
-    padding-left: 10px;
-    box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
-}
-
-.top-header-search-btn {
-    position: absolute;
-    top: 5px;
-    right: 15px
-}
-
-.top-header-social-icons a img {
-    padding: 0;
-    position: relative;
-    top: 35px;
-    right: -90px
-}
-
-
-/* Secondary Header settings */
-
-.secondary-header {
-    height: 56px;
-    background-image: linear-gradient(-45deg, rgb(245, 245, 245) 25%, transparent 25%, transparent 50%, rgb(245, 245, 245) 50%, rgb(245, 245, 245) 75%, transparent 75%, transparent);
-    background-size: 8px 8px;
-    border-top: 1px solid transparent;
-    border-image: radial-gradient(circle, rgb(203, 203, 203) 40%, rgb(220, 220, 220) 80%, rgb(232, 232, 232) 20%);
-    border-image-slice: 1;
-    box-shadow: inset 0 7px 6px -6px rgb(225, 225, 225);
-}
-
-.secondary-header-container {
-    padding-left: 23px;
-    display: flex;
-}
-
-
-/* Secondary header nav settings */
-
-.secondary-header-nav {
-    display: flex;
-    flex-direction: row;
-    padding-top: 17px;
-}
-
-.secondary-header-nav li {
-    font-family: 'Kreon-Light';
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-right: 21px;
-}
-
-.secondary-header-nav .first-el {
-    color: rgb(67, 125, 139);
-    font-weight: 600;
-}
-
-
-/* carousel general*/
-
-.carousel {
-    max-width: 960px;
-    max-height: 332px;
-}
-
-.carousel-img {
-    object-fit: cover;
-    width: 960px;
-    max-height: 332px;
-    border: 1px solid rgb(240, 240, 240);
-    box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
-}
-
-
-/* Carousel navigation arrows and bottom points*/
-
-.right span {
-    float: right;
-    padding-top: 100%;
-}
-
-.carousel-right-arrow {
-    margin-right: -8px;
-    cursor: pointer;
-}
-
-.left span {
-    float: left;
-    padding-top: 100%;
-    color: white;
-}
-
-.carousel-left-arrow {
-    margin-left: -8px;
-    cursor: pointer;
-}
-
-
-/* Carousel  bottom points*/
-
-.carousel-indicators {
-    bottom: -15%
-}
-
-.carousel-indicators li {
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(223, 223, 223);
-}
-
-.carousel-indicators .active {
-    border-radius: 50%;
-    border: 2.5px solid rgb(223, 223, 223);
-    background-color: rgb(30, 30, 30)
-}
-
-
-/* Carousel main window caption */
-
-.carousel-caption {
-    right: 5%;
-    padding-top: 36px;
-    padding-right: 30px;
-    padding-left: 32px;
-    margin-bottom: 25px;
-    left: auto;
-    width: 413px;
-    height: 235px;
-    background-color: rgba(0, 0, 0, 0.59);
-    text-align: left;
-}
-
-.carousel-caption h2 {
-    font-family: 'Kreon-Light';
-    font-size: 28px;
-    font-weight: 100;
-    margin-top: 0;
-    color: rgb(255, 255, 255)
-}
-
-.carousel-caption p {
-    font-family: 'Droid-Sans';
-    line-height: 170%;
-    font-size: 12px;
-    color: rgb(178, 168, 163);
-}
-
-.carousel-caption-btn {
-    float: right;
-    background-color: rgba(14, 13, 1, 0.3);
-    font-family: Kreon;
-    font-size: 13px;
-    color: rgb(123, 146, 151);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-
-/* Jumbotron settings */
-
-.main-jumbotron-section {
-    background-color: rgb(255, 255, 255);
-    max-height: 130px;
-    padding-top: 0px;
-    margin-top: 55px;
-    text-align: center;
-    vertical-align: center
-}
-
-.main-jumbotron-section h2 {
-    font-family: 'Kreon-Light';
-    font-weight: 500;
-    position: relative;
-    top: -10px
-}
-
-.main-jumbotron-section p {
-    font-family: 'Kreon-Light';
-    font-weight: 500;
-    color: rgb(175, 175, 175);
-    position: relative;
-    top: -15px;
-}
-
-.section-separator {
-    /* margin-top: 55px; */
-    width: 890px;
-    margin-bottom: 40px;
-}
-
-
-/* General Footer settings */
-
-footer {
-    background-color: rgb(249, 249, 249);
-    border: 1px solid rgb(255, 255, 255);
-}
-
-
-/* Main footer settings */
-
-.main-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 36px;
-}
-
-.main-footer-column {
-    flex-basis: 190px;
-    font-family: 'Droid-Sans';
-    font-size: 12px;
-    color: rgb(160, 160, 160);
-}
-
-.main-footer-column>span {
-    font-family: 'Kreon-Light';
-    font-size: 20px;
-    color: rgb(29, 29, 29);
-    display: block;
-    margin-bottom: 20px;
-}
-
-
-/* Main footer first column logo settings */
-
-.main-footer-logo-img {
-    zoom: 70%;
-}
-
-.main-footer-logo-text {
-    float: right;
-    padding-right: 47px;
-    font-family: 'Kreon-Light';
-    font-size: 20.22px;
-    color: rgb(17, 17, 17);
-    text-transform: uppercase;
-}
-
-.main-footer-slogan-text {
-    float: right;
-    font-family: 'Droid-Sans';
-    font-size: 9.1px;
-    text-transform: uppercase;
-    color: rgb(102, 146, 156);
-    font-weight: 600;
-    margin-top: -12px;
-    padding-right: 49px
-}
-
-.main-footer-column:first-child>span {
-    font-family: Kreon;
-    font-size: 12px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    color: rgb(131, 131, 131);
-}
-
-
-/* Main Footer List settings */
-
-.footer-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-list li {
-    list-style-type: disc;
-    padding-right: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 16px
-}
-
-.footer-list li:last-child {
-    margin-bottom: 0px;
-}
-
-
-/* Bottom footer settings */
-
-.bottom-footer {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    font-family: 'Kreon-Light';
-    font-size: 12px;
-    color: rgb(205, 205, 205);
-}
-
-.bottom-footer-dark {
-    color: rgb(146, 146, 146);
-}
-
-@media (min-width: 1100px) {
-    /* tova e defaultniq  */
-}
-
-@media (max-width: 1099px) and (min-width: 800px) {
-    /* Header and Top NAvigation behaviour  */
+    /* Adding custom fonts  */
+    
+    @font-face {
+        font-family: BlackJackReg;
+        src: url('./fonts/BLACKJAR.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: Kreon;
+        src: url('./fonts/Kreon-Regular.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: Kreon-Light;
+        src: url('./fonts/Kreon-Light.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: Droid-Sans;
+        src: url('./fonts/DroidSans.ttf') format('truetype');
+    }
+    /* General element settings */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        border: 1px solid purple;
+        background-image: url('./pics/background.png');
+        box-shadow: 1px black;
+    }
+    
+    .main-window {
+        max-width: 960px;
+        margin: auto;
+        border-top: 1px solid rgb(255, 255, 255);
+        margin-top: 50px;
+        margin-bottom: 100px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-height: 100vh;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.08), 0 0 25px rgba(0, 0, 0, 0.08);
+    }
+    
+    main {
+        flex-grow: 1
+    }
+    
+    ul,
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        color: rgb(57, 57, 57);
+    }
+    
+    a:link {
+        text-decoration: none;
+        text-decoration-color: none
+    }
+    /* Top Header container general settings  */
+    
     .top-header {
         display: flex;
-        flex-direction: column;
-        flex-wrap: flex;
-        align-items: center;
-        position: none
-    }
-    .top-header-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-height: 100px;
         position: relative;
-        left: -100px
+        background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
     }
-    .top-header-panel {
-        left: 50%
-    }
-}
-
-@media (max-width: 799px) and (min-width: 500px) {
-    /* Header and Top NAvigation behaviour  */
-    .top-header-logo-img {
-        visibility: hidden;
-        float: right
-    }
-    .top-header-logo-text {
-        top: 0px
-    }
-    .secondary-header {
-        display: none
-    }
-    .top-header-panel {
-        right: 0
-    }
-    .top-header-nav {
+    /* Top Header left side logo section  */
+    
+    .top-header-logo {
+        margin-right: auto;
         position: relative;
-        top: -70px
     }
-    .carousel-control {
-        padding-top: 10%
-    }
-}
-
-@media (max-width: 499px) {
-    /* Header and Top NAvigation behaviour  */
-    .secondary-header {
-        display: none;
-    }
-    .top-header {
-        height: 10px
-    }
-    .top-header-nav {
-        display: none
-    }
-    .top-header-nav li a {
-        z-index: 6;
-        color: orange;
-        background-color: white;
-        font-size: 18px
-    }
+    
     .top-header-logo-img {
-        display: none
+        padding-top: 30px;
+        padding-left: 35px;
     }
+    
     .top-header-logo-text {
-        top: 0px
+        font-family: BlackJackReg;
+        text-decoration: none;
+        position: absolute;
+        top: 28px;
+        font-size: 32px;
+        color: rgb(66, 66, 66);
     }
-    .top-header-panel {
-        display: none
+    
+    .top-header-slogan-text {
+        text-transform: uppercase;
+        font-family: Kreon;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(67, 125, 139);
+        position: relative;
+        top: 30px
     }
+    /* Top Header Nav */
+    
+    .top-header-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 59px;
+    }
+    
+    .top-header-nav li {
+        font-family: 'Kreon-Light';
+        font-size: 15px;
+        font-weight: 550;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    
+    .top-header-nav .first-el {
+        color: rgb(67, 124, 139);
+        font-weight: 600;
+    }
+    
+    .top-header-nav:last-child {
+        padding-right: 30px
+    }
+    
     .top-header-display-icon {
-        display: block;
-        padding-right: 20px;
-        padding-bottom: 15px;
-        float: right;
-    }
-    .responsive {
-        display: block;
-        z-index: 100;
-        position: fixed;
-        float: left;
-    }
-    .carousel-caption {
         display: none;
     }
-    .carousel-control {
-        padding-top: 10%
+    /* Top Header right top panel section search & social icons */
+    
+    .top-header-panel {
+        position: relative;
+        top: 0px;
+        right: -530px;
+        height: 30px;
     }
-}
+    
+    .top-header-social-icons {
+        position: absolute;
+        top: -30px;
+        left: -155px;
+    }
+    
+    .top-header-search {
+        position: relative;
+        width: 160px;
+        height: 28px;
+        margin-left: 30px;
+        left: -41px;
+    }
+    
+    .top-header-search-form {
+        width: 160px;
+    }
+    
+    .top-header-search-input {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 11px;
+        font-style: italic;
+        color: rgb(163, 163, 163);
+        text-shadow: 1px 1px #fff;
+        background-image: linear-gradient( rgb(238, 238, 238), rgb(249, 249, 249) 50%);
+        width: 160px;
+        height: 28px;
+        border: none;
+        padding-left: 10px;
+        box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
+    }
+    
+    .top-header-search-btn {
+        position: absolute;
+        top: 5px;
+        right: 15px
+    }
+    
+    .top-header-social-icons a img {
+        padding: 0;
+        position: relative;
+        top: 35px;
+        right: -90px
+    }
+    /* Secondary Header settings */
+    
+    .secondary-header {
+        height: 56px;
+        background-image: linear-gradient(-45deg, rgb(245, 245, 245) 25%, transparent 25%, transparent 50%, rgb(245, 245, 245) 50%, rgb(245, 245, 245) 75%, transparent 75%, transparent);
+        background-size: 8px 8px;
+        border-top: 1px solid transparent;
+        border-image: radial-gradient(circle, rgb(203, 203, 203) 40%, rgb(220, 220, 220) 80%, rgb(232, 232, 232) 20%);
+        border-image-slice: 1;
+        box-shadow: inset 0 7px 6px -6px rgb(225, 225, 225);
+    }
+    
+    .secondary-header-container {
+        padding-left: 23px;
+        display: flex;
+    }
+    /* Secondary header nav settings */
+    
+    .secondary-header-nav {
+        display: flex;
+        flex-direction: row;
+        padding-top: 17px;
+    }
+    
+    .secondary-header-nav li {
+        font-family: 'Kreon-Light';
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-right: 21px;
+    }
+    
+    .secondary-header-nav .first-el {
+        color: rgb(67, 125, 139);
+        font-weight: 600;
+    }
+    /* carousel general*/
+    
+    .carousel {
+        max-width: 960px;
+        max-height: 332px;
+    }
+    
+    .carousel-img {
+        object-fit: cover;
+        width: 960px;
+        max-height: 332px;
+        border: 1px solid rgb(240, 240, 240);
+        box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.08);
+    }
+    /* Carousel navigation arrows and bottom points*/
+    
+    .right span {
+        float: right;
+        padding-top: 100%;
+    }
+    
+    .carousel-right-arrow {
+        margin-right: -8px;
+        cursor: pointer;
+    }
+    
+    .left span {
+        float: left;
+        padding-top: 100%;
+        color: white;
+    }
+    
+    .carousel-left-arrow {
+        margin-left: -8px;
+        cursor: pointer;
+    }
+    /* Carousel  bottom points*/
+    
+    .carousel-indicators {
+        bottom: -15%
+    }
+    
+    .carousel-indicators li {
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(223, 223, 223);
+    }
+    
+    .carousel-indicators .active {
+        border-radius: 50%;
+        border: 2.5px solid rgb(223, 223, 223);
+        background-color: rgb(30, 30, 30)
+    }
+    /* Carousel main window caption */
+    
+    .carousel-caption {
+        right: 5%;
+        padding-top: 36px;
+        padding-right: 30px;
+        padding-left: 32px;
+        margin-bottom: 25px;
+        left: auto;
+        width: 413px;
+        height: 235px;
+        background-color: rgba(0, 0, 0, 0.59);
+        text-align: left;
+    }
+    
+    .carousel-caption h2 {
+        font-family: 'Kreon-Light';
+        font-size: 28px;
+        font-weight: 100;
+        margin-top: 0;
+        color: rgb(255, 255, 255)
+    }
+    
+    .carousel-caption p {
+        font-family: 'Droid-Sans';
+        line-height: 170%;
+        font-size: 12px;
+        color: rgb(178, 168, 163);
+    }
+    
+    .carousel-caption-btn {
+        float: right;
+        background-color: rgba(14, 13, 1, 0.3);
+        font-family: Kreon;
+        font-size: 13px;
+        color: rgb(123, 146, 151);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    /* Jumbotron settings */
+    
+    .main-jumbotron-section {
+        background-color: rgb(255, 255, 255);
+        max-height: 130px;
+        padding-top: 0px;
+        margin-top: 55px;
+        text-align: center;
+        vertical-align: center
+    }
+    
+    .main-jumbotron-section h2 {
+        font-family: 'Kreon-Light';
+        font-weight: 500;
+        position: relative;
+        top: -10px
+    }
+    
+    .main-jumbotron-section p {
+        font-family: 'Kreon-Light';
+        font-weight: 500;
+        color: rgb(175, 175, 175);
+        position: relative;
+        top: -15px;
+    }
+    
+    .section-separator {
+        /* margin-top: 55px; */
+        width: 890px;
+        margin-bottom: 40px;
+    }
+    /* Previews settings  */
+    
+    .previews {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        justify-content: center;
+    }
+    
+    .preview {
+        width: 240px;
+    }
+    
+    .preview:not(:last-child) {
+        margin-right: 0px;
+    }
+    
+    .preview__title {
+        font-size: 20px;
+        overflow: hidden;
+        font-family: 'Kreon-Light';
+    }
+    
+    .preview__summary {
+        font-size: 14px;
+        font-family: 'Droid-Sans';
+        color: purple;
+        padding: 20px 5px 13px 5px;
+        line-height: 170%;
+    }
+    
+    .preview__image-container {
+        width: 240px;
+        height: 125px;
+    }
+    
+    .preview__image {
+        width: 240px;
+        height: 125px;
+    }
+    
+    .preview__hover-icon {
+        position: relative;
+        bottom: 50%;
+        left: 50%;
+        display: inline-block;
+        margin: -1.67em 0 0 -1.67em;
+        width: 40px;
+        height: 40px;
+        background: url("images/preview-hover-icon.png");
+        visibility: hidden;
+    }
+    /* General Footer settings */
+    
+    footer {
+        background-color: rgb(249, 249, 249);
+        border: 1px solid rgb(255, 255, 255);
+    }
+    /* Main footer settings */
+    
+    .main-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 36px;
+    }
+    
+    .main-footer-column {
+        flex-basis: 190px;
+        font-family: 'Droid-Sans';
+        font-size: 12px;
+        color: rgb(160, 160, 160);
+    }
+    
+    .main-footer-column>span {
+        font-family: 'Kreon-Light';
+        font-size: 20px;
+        color: rgb(29, 29, 29);
+        display: block;
+        margin-bottom: 20px;
+    }
+    /* Main footer first column logo settings */
+    
+    .main-footer-logo-img {
+        zoom: 70%;
+    }
+    
+    .main-footer-logo-text {
+        float: right;
+        padding-right: 47px;
+        font-family: 'Kreon-Light';
+        font-size: 20.22px;
+        color: rgb(17, 17, 17);
+        text-transform: uppercase;
+    }
+    
+    .main-footer-slogan-text {
+        float: right;
+        font-family: 'Droid-Sans';
+        font-size: 9.1px;
+        text-transform: uppercase;
+        color: rgb(102, 146, 156);
+        font-weight: 600;
+        margin-top: -12px;
+        padding-right: 49px
+    }
+    
+    .main-footer-column:first-child>span {
+        font-family: Kreon;
+        font-size: 12px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        color: rgb(131, 131, 131);
+    }
+    /* Main Footer List settings */
+    
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-list li {
+        list-style-type: disc;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 16px
+    }
+    
+    .footer-list li:last-child {
+        margin-bottom: 0px;
+    }
+    /* Bottom footer settings */
+    
+    .bottom-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        font-family: 'Kreon-Light';
+        font-size: 12px;
+        color: rgb(205, 205, 205);
+    }
+    
+    .bottom-footer-dark {
+        color: rgb(146, 146, 146);
+    }
+    
+    @media (min-width: 1100px) {
+        /* tova e defaultniq  */
+    }
+    
+    @media (max-width: 1099px) and (min-width: 800px) {
+        /* Header and Top NAvigation behaviour  */
+        .top-header {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: flex;
+            align-items: center;
+            position: none
+        }
+        .top-header-nav {
+            position: relative;
+            left: -100px
+        }
+        .top-header-panel {
+            left: 50%
+        }
+    }
+    
+    @media (max-width: 799px) and (min-width: 500px) {
+        /* Header and Top NAvigation behaviour  */
+        .top-header-logo-img {
+            visibility: hidden;
+            float: right
+        }
+        .top-header-logo-text {
+            top: 0px
+        }
+        .secondary-header {
+            display: none
+        }
+        .top-header-panel {
+            right: 0
+        }
+        .top-header-nav {
+            position: relative;
+            top: -70px
+        }
+        .carousel-control {
+            padding-top: 10%
+        }
+        .main-footer-column {
+            flex: 1 0 calc(50% - 10px);
+            padding: 30px;
+        }
+    }
+    
+    @media (max-width: 499px) {
+        /* Header and Top NAvigation behaviour  */
+        .secondary-header {
+            display: none;
+        }
+        .top-header {
+            height: 10px
+        }
+        .top-header-nav {
+            display: none
+        }
+        .top-header-nav li a {
+            z-index: 6;
+            color: orange;
+            background-color: white;
+            font-size: 18px
+        }
+        .top-header-logo-img {
+            display: none
+        }
+        .top-header-logo-text {
+            top: 0px
+        }
+        .top-header-panel {
+            display: none
+        }
+        .top-header-display-icon {
+            display: block;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            float: right;
+        }
+        .responsive {
+            display: block;
+            z-index: 100;
+            position: fixed;
+            float: left;
+        }
+        .carousel-caption {
+            display: none;
+        }
+        .carousel-control {
+            padding-top: 10%
+        }
+        .main-footer-column:first-child,
+        .main-footer-column:last-child {
+            display: none
+        }
+    }
