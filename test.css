@@ -529,7 +529,7 @@
             display: none
         }
         .top-header-panel {
-            right: 0
+            right: 0px;
         }
         .top-header-nav {
             position: relative;
@@ -537,6 +537,19 @@
         }
         .carousel-control {
             padding-top: 10%
+        }
+        .main-jumbotron-section {
+            margin-top: 40px;
+            margin-bottom: 10px
+        }
+        .main-jumbotron-section h2 {
+            font-size: 1.8em
+        }
+        .main-jumbotron-section p {
+            font-size: 1.4em
+        }
+        .section-separator {
+            margin: 20px
         }
         .main-footer-column {
             flex: 1 0 calc(50% - 10px);
@@ -577,10 +590,10 @@
             float: right;
         }
         .responsive {
-            display: block;
+            display: inline-block;
             z-index: 100;
-            position: fixed;
-            float: left;
+            position: absolute;
+            top: 0px
         }
         .carousel-caption {
             display: none;
@@ -588,8 +601,27 @@
         .carousel-control {
             padding-top: 10%
         }
+        .section-separator {
+            margin: 10px
+        }
+        .main-jumbotron-section {
+            margin-top: 30px;
+            margin-bottom: 10px
+        }
+        .main-jumbotron-section h2 {
+            font-size: 1.5em
+        }
+        .main-jumbotron-section p {
+            display: none
+        }
         .main-footer-column:first-child,
         .main-footer-column:last-child {
             display: none
+        }
+        .main-footer {
+            padding-top: 10px;
+        }
+        .main-footer-column {
+            margin-bottom: 20px
         }
     }
