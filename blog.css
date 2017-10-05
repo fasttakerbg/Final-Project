@@ -206,139 +206,42 @@
             position: relative;
             top: -20px
         }
-        /*MAin content settings */
+        /* Main content settings */
         
-        .main-content {
-            max-width: 860px;
-            margin: auto;
+        .card-entry-container {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-color: rgb(255, 255, 255);
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: rgb(253, 253, 253);
+            border: 1px solid rgb(240, 240, 240);
         }
         
-        .main-content-left {
-            max-width: 550px;
-            padding-left: 0px;
+        .card-img-top {
+            max-width: 200px;
+            max-height: 150px;
+            margin-top: auto;
+            margin-bottom: auto
+        }
+        
+        .card-entry-text {
+            margin: 10px;
+            font-family: 'Droid-Sans';
+            font-size: 12px;
             color: rgb(146, 146, 146);
         }
         
-        .main-content-left h4 {
+        .card-entry-text h4 {
             font-family: 'Kreon-Light';
             font-size: 15px;
-            border: 1px solid rgb(240, 240, 240);
-            border-left: transparent;
-            border-right: transparent;
-            vertical-align: middle;
-            line-height: 30px;
-            margin-bottom: 17px;
+            color: rgb(44, 44, 44);
         }
         
-        .main-content-left article {
-            font-family: 'Droid-Sans';
-            font-size: 12px;
-        }
-        
-        .main-content-left img {
-            width: 200px;
-            height: 200px;
-            margin-right: 28px
-        }
-        
-        .main-content-right {
-            display: flex;
-            flex-direction: column;
-            font-family: 'Droid-Sans';
-            font-size: 12px;
-            color: rgb(160, 160, 160);
-        }
-        
-        .pull-content-right {
-            margin-right: 0;
-            padding-right: 0
-        }
-        
-        .main-content-right-container>span {
-            font-family: 'Kreon-Light';
-            font-size: 20px;
-            color: rgb(29, 29, 29);
-            display: block;
-            margin-bottom: 17px;
-        }
-        
-        .main-content-right-container li {
-            list-style-type: disc;
-            padding-right: 0px;
-            margin-top: 0px;
-            margin-left: 0px;
-            margin-bottom: 16px;
-        }
-        
-        .main-content-right li:last-child {
-            margin-bottom: 42px;
-        }
-        
-        .main-content-right-container {
-            margin: auto
-        }
-        /* Main Comment settings  */
-        
-        .main-comment {
-            margin-bottom: 63px;
-        }
-        
-        .main-comment h1 {
-            font-family: 'Kreon-Light';
-            font-size: 28px;
-            color: rgb(28, 28, 28);
-            margin-bottom: 22px;
-        }
-        
-        .main-comment-container {
-            background-color: rgb(253, 253, 253);
-            border: 1px solid rgb(240, 240, 240);
-            height: 170px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 27px
-        }
-        
-        .main-comment-container div {
-            padding: 14px;
-        }
-        
-        .main-comment-author {
-            font-family: 'Kreon-Light';
-            font-size: 20px;
-            color: rgb(29, 29, 29)
-        }
-        
-        .main-comment-date {
-            font-family: Georgia;
-            font-size: 12px;
-            font-style: italic
-        }
-        
-        .main-comment img {
-            width: 68px;
-            height: 68px;
-            margin-right: 16px;
-        }
-        
-        .main-comment-btn {
+        .card-footer-btn {
+            margin-top: 5px;
             font-family: 'Kreon-Light';
             font-size: 12px;
             color: rgb(44, 44, 44);
             font-weight: 700;
-        }
-        /* Post Comment section  */
-        
-        .leave-comment {
-            font-family: 'Droid-Sans';
-            font-size: 12px;
-            background-color: rgb(253, 253, 253);
-            border: 1px solid rgb(240, 240, 240);
         }
         /* General Footer settings */
         
@@ -434,4 +337,35 @@
         
         .bottom-footer-dark {
             color: rgb(146, 146, 146);
+        }
+        
+        @media (max-width: 1099px) and (min-width: 800px) {}
+        
+        @media (max-width: 799px) and (min-width: 500px) {
+            .main-jumbotron-section {
+                margin-top: 40px;
+                margin-bottom: 10px
+            }
+            .main-jumbotron-section h2 {
+                font-size: 1.8em
+            }
+            .main-jumbotron-section p {
+                font-size: 1.4em
+            }
+        }
+        
+        @media (max-width: 499px) {
+            .card-entry-container {
+                display: block
+            }
+            .main-jumbotron-section {
+                margin-top: 30px;
+                margin-bottom: 10px
+            }
+            .main-jumbotron-section h2 {
+                font-size: 1.5em
+            }
+            .main-jumbotron-section p {
+                display: none
+            }
         }
