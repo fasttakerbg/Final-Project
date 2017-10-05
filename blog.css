@@ -344,7 +344,7 @@
         @media (max-width: 799px) and (min-width: 500px) {
             .main-jumbotron-section {
                 margin-top: 40px;
-                margin-bottom: 10px
+                margin-bottom: 0px
             }
             .main-jumbotron-section h2 {
                 font-size: 1.8em
@@ -360,7 +360,7 @@
             }
             .main-jumbotron-section {
                 margin-top: 30px;
-                margin-bottom: 10px
+                margin-bottom: -20px
             }
             .main-jumbotron-section h2 {
                 font-size: 1.5em
