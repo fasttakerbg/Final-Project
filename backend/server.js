@@ -14,6 +14,7 @@ const db = low(adapter);
 
 app.use(express.static(__dirname + '/../public'));
 
+
 app.get('/', (req, res) => {
     res.sendFile('index.html');
 });
@@ -23,10 +24,10 @@ let controller = require('./controller')(db);
 
 app.get('/api/carouselContent', controller.getCarouselContent);
 // app.get('/api/news/tennisnews', newsController.getTennisNews);
-// app.get('/api/news/latestSportNews', newsController.getLatestSportNews);
+app.get('/api/latestSportNews', controller.getLatestSportNews);
 // app.get('/api/getFromBlog', newsController.getRecentFromBlog);
-// app.get('/api/news/recentPosts', newsController.getRecentPosts);
-// app.get('/api/news/media', newsController.getMedia);
+app.get('/api/recentPosts', controller.getRecentPosts);
+app.get('/api/media', controller.getMedia);
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);

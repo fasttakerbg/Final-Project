@@ -9,7 +9,7 @@ module.exports = (db) => {
 
     // Get
     function getCarouselContentFromDB() {
-        return db.get('countryList').value();
+        return db.get('carouselContent').value();
     }
 
 
@@ -21,6 +21,48 @@ module.exports = (db) => {
         });
     };
 
+
+
+
+    function getLatestSportNewsFromDB() {
+        return db.get('latestSportNews').value();
+    }
+
+    function getLatestSportNews(req, res) {
+        const news = getLatestSportNewsFromDB();
+        res.send({
+            result: news
+        });
+
+
+    };
+
+
+    function getRecentPostsFromDB() {
+        return db.get('recentPosts').value();
+    }
+
+    function getRecentPosts(req, res) {
+        const posts = getRecentPostsFromDB();
+        res.send({
+            result: posts
+        });
+
+
+    };
+
+    function getMediaFromDB() {
+        return db.get('media').value();
+    }
+
+    function getMedia(req, res) {
+        const media = getMediaFromDB();
+        res.send({
+            result: media
+        });
+
+
+    };
     // function getTennisNews(req, res) {
     //     const news = getNewsFromDB()['tennisNews'];
     //     res.send({
@@ -32,5 +74,8 @@ module.exports = (db) => {
 
     return {
         getCarouselContent,
+        getLatestSportNews,
+        getRecentPosts,
+        getMedia,
     };
 };

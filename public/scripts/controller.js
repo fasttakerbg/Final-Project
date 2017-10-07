@@ -6,6 +6,9 @@ class Controller {
     getHome() {
         let promises = [
             dataService.carouselContent(),
+            dataService.latestSportNews(),
+            dataService.recentPosts(),
+            dataService.displayMedia(),
             // dataService.peruInfo(),
             // dataService.egyptInfo(),
             // dataService.cambodiaInfo(),
@@ -13,6 +16,9 @@ class Controller {
         ];
         Promise.all(promises).then((values) => {
             let carouselContent = values[0];
+            let latestSportNews = values[1];
+            let recentPosts = values[2];
+            let media = values[3];
             // let peruInfo = values[0];
             // let egyptInfo = values[1];
             // let cambodiaInfo = values[2];
@@ -20,10 +26,13 @@ class Controller {
 
             handlebarsHandler.createTemplate('home', '#template-content', {
                 carouselContent: carouselContent,
-                // peruInfo: peruInfo,
-                // egyptInfo: egyptInfo,
-                // cambodiaInfo: cambodiaInfo,
-                // bulgariaInfo: bulgariaInfo
+                latestSportNews: latestSportNews,
+                recentPosts: recentPosts,
+                media: media
+                    // peruInfo: peruInfo,
+                    // egyptInfo: egyptInfo,
+                    // cambodiaInfo: cambodiaInfo,
+                    // bulgariaInfo: bulgariaInfo
             });
         })
 
