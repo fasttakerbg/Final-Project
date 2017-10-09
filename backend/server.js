@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 
-let controller = require('./controller')(db);
+const controller = require('./controller')(db);
 
 app.get('/api/carouselContent', controller.getCarouselContent);
 // app.get('/api/news/tennisnews', newsController.getTennisNews);

@@ -368,9 +368,6 @@
  
  @media (max-width: 499px) {
      /* Header and Top NAvigation behaviour  */
-     .secondary-header {
-         display: none;
-     }
      .top-header {
          height: 80px
      }
@@ -426,9 +423,6 @@
      }
      .responsive li:nth-child(5) {
          display: none
-     }
-     .carousel-caption {
-         display: none;
      }
      .section-separator {
          margin: 20px
