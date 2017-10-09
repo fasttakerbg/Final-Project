@@ -1,32 +1,29 @@
 {
     "recentPosts": [{
             "id": 22,
-            "title": "Who is the best tennis player of all time?"
+            "title": "How to get to Machu Picchu"
         },
         {
             "id": 23,
-            "title": "Why Ronaldo mess with the best?"
+            "title": "Handling the heights"
         },
         {
             "id": 24,
-            "title": "O2 Arena ready to beat all the records"
+            "title": "Lots of money to spend here"
         },
         {
             "id": 25,
-            "title": "Why Ronaldo mess with the best?"
+            "title": "And always return to PEru"
         },
         {
             "id": 26,
-            "title": "O2 Arena ready to beat all the records"
+            "title": "Leave worries home"
         },
         {
             "id": 27,
-            "title": "Why Ronaldo mess with the best?"
-        },
-        {
-            "id": 28,
-            "title": "O2 Arena ready to beat all the records"
+            "title": "How to get to Machu Picchu"
         }
+
     ],
 
     "carouselContent": [{
@@ -110,6 +107,7 @@
             ]
         }
     ],
+
     "latestSportNews": [{
             "id": 19,
             "title": "NBA Action is now on USA",
@@ -136,6 +134,7 @@
             "image": "pics/trip3.png"
         }
     ],
+
     "media": [{
             "id": "1",
             "imageUrl": "pics/media-img1.png",
@@ -166,5 +165,29 @@
             "imageUrl": "pics/media-img3.png",
             "description": "Juan Monaco is the greatest one of all time"
         }
-    ]
+    ],
+
+    "post": [{
+
+        "id": "19",
+        "title": "Peru in December",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, Ipsum passages",
+
+        "date": "June 16, 2017",
+        "image": "pics/post-pic.png",
+        "category": "Peru",
+        "author": "Todor",
+        "comments": [{
+            "author": "Ivo Petrov",
+            "date": "October 1, 2017",
+            "text": "PEru is excellent all the year through. DEfinitely GO!!!"
+        }]
+
+    }],
+    "comments": {
+        "author": "Ivo Petrov",
+        "date": "October 1, 2017",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
+    }
 }

@@ -656,10 +656,6 @@
             justify-content: center
         }
         .blog-media {
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap */
             justify-content: center
         }
         .blog-p {
@@ -667,19 +663,11 @@
         }
         .media {
             padding-bottom: 320px;
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center; */
-            /* position: relative */
         }
         .media__img-container:not(:first-child) {
             display: none
         }
         .media__bar {
-            /* position: absolute;
-            top: 30rem;
-            left: 15%;
-            zoom: 160% */
             position: absolute;
             margin-left: -190px;
             margin-top: 90px;

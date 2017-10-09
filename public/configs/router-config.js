@@ -10,12 +10,12 @@ class Router {
             // this.before({}, () => {
             //     headerController.initialize();
             // });
-
+            // Home Page
             this.get('#/', (sammy) => sammy.redirect('#/home'));
             this.get('#/home', controller.getHome);
 
-            //Account
-            // this.get('#/tennisNews', newsController.getTennisNews);
+            //Post Page
+            this.get('#/post', controller.getPost);
             // this.get('#/account/sign-up', accountController.loadSignUpPage);
 
             // this.post('#/account/sign-in', accountController.signIn);

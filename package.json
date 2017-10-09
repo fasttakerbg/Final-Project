@@ -20,6 +20,14 @@
     "homepage": "https://github.com/fasttakerbg/Final-Project#readme",
     "dependencies": {
         "express": "^4.16.1",
+        "gulp": "^3.9.1",
         "lowdb": "^1.0.0"
+    },
+    "devDependencies": {
+        "del": "^3.0.0",
+        "gulp-cssnano": "^2.1.2",
+        "gulp-imagemin": "^3.4.0",
+        "gulp-rev": "^8.0.0",
+        "gulp-usemin": "^0.3.28"
     }
 }

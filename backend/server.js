@@ -28,7 +28,8 @@ app.get('/api/latestSportNews', controller.getLatestSportNews);
 // app.get('/api/getFromBlog', newsController.getRecentFromBlog);
 app.get('/api/recentPosts', controller.getRecentPosts);
 app.get('/api/media', controller.getMedia);
-
+app.get('/api/post', controller.getPost);
+app.get('/api/comments', controller.getComments);
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });

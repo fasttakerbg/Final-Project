@@ -22,6 +22,13 @@ class DataService {
         return requester.getJSON('/api/media')
     }
 
+    loadPost() {
+        return requester.getJSON('api/post')
+    }
+
+    getComments() {
+        return requester.getJSON('api/comments')
+    }
 }
 const dataService = new DataService();
 export { dataService };

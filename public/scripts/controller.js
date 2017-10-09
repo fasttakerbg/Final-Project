@@ -37,6 +37,28 @@ class Controller {
         })
 
     }
+
+    getPost() {
+        let promises = [
+            dataService.loadPost(),
+            dataService.recentPosts(),
+            dataService.getComments(),
+
+        ];
+        Promise.all(promises).then((values) => {
+            let post = values[0];
+            let recentPosts = values[1];
+            let comments = values[2];
+
+            handlebarsHandler.createTemplate('post', '#template-content', {
+                recentPosts: recentPosts,
+                post: post,
+                comments: comments
+
+            })
+            console.log(post.title)
+        })
+    }
 }
 
 const controller = new Controller();

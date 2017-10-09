@@ -63,6 +63,34 @@ module.exports = (db) => {
 
 
     };
+
+    function getPostFromDB() {
+        return db.get('post').value();
+    }
+
+    function getPost(req, res) {
+        const post = getPostFromDB();
+        res.send({
+            result: post
+        });
+
+
+    };
+
+    function getCommentsFromDB() {
+        return db.get('comments').value();
+    }
+
+    function getComments(req, res) {
+        const comments = getCommentsFromDB();
+        res.send({
+            result: comments
+        });
+
+
+    };
+
+
     // function getTennisNews(req, res) {
     //     const news = getNewsFromDB()['tennisNews'];
     //     res.send({
@@ -77,5 +105,7 @@ module.exports = (db) => {
         getLatestSportNews,
         getRecentPosts,
         getMedia,
+        getPost,
+        getComments,
     };
 };
