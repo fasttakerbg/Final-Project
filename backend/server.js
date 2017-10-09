@@ -30,6 +30,7 @@ app.get('/api/recentPosts', controller.getRecentPosts);
 app.get('/api/media', controller.getMedia);
 app.get('/api/post', controller.getPost);
 app.get('/api/comments', controller.getComments);
+app.get('/api/blogArticles', controller.getBlogArticles);
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });

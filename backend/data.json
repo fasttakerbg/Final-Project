@@ -1,26 +1,26 @@
 {
     "recentPosts": [{
-            "id": 22,
+            "id": 1,
             "title": "How to get to Machu Picchu"
         },
         {
-            "id": 23,
+            "id": 2,
             "title": "Handling the heights"
         },
         {
-            "id": 24,
+            "id": 3,
             "title": "Lots of money to spend here"
         },
         {
-            "id": 25,
+            "id": 4,
             "title": "And always return to PEru"
         },
         {
-            "id": 26,
+            "id": 5,
             "title": "Leave worries home"
         },
         {
-            "id": 27,
+            "id": 6,
             "title": "How to get to Machu Picchu"
         }
 
@@ -33,78 +33,32 @@
 
             "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
             "createdAt": "2016-12-31T11:31:13.840Z",
-            "image": "pics/machu.png",
-            "comments": [{
-                    "name": "Petar",
-                    "email": "petraka@abv.bg",
-                    "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
-                },
-                {
-                    "name": "Stefan",
-                    "email": "stefan@abv.bg",
-                    "message": "But Soderling is a great server and beat Nadal in RG 2009"
-                }
-            ]
+            "image": "pics/machu.png"
+
         },
         {
             "id": 2,
-            "title": "Federer won 19th GS title at Wimbledon 2017",
+            "title": "Day trip to CAiro and the Pyramids",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
             "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
             "createdAt": "2016-12-31T11:31:13.840Z",
-            "image": "pics/pyramids.png",
-            "image-small": "images/tennis-news-2-small.jpg",
-            "comments": [{
-                    "name": "Petar",
-                    "email": "petraka@abv.bg",
-                    "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
-                },
-                {
-                    "name": "Stefan",
-                    "email": "stefan@abv.bg",
-                    "message": "But Soderling is a great server and beat Nadal in RG 2009"
-                }
-            ]
+            "image": "pics/pyramids.png"
         },
         {
             "id": 3,
-            "title": "Federer won 19th GS title at Wimbledon 2017",
+            "title": "See the ancient temples in CAmbodia",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
             "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
             "createdAt": "2016-12-31T11:31:13.840Z",
-            "image": "pics/angkor.png",
-            "image-small": "images/tennis-news-3-small.jpg",
-            "comments": [{
-                    "name": "Petar",
-                    "email": "petraka@abv.bg",
-                    "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
-                },
-                {
-                    "name": "Stefan",
-                    "email": "stefan@abv.bg",
-                    "message": "But Soderling is a great server and beat Nadal in RG 2009"
-                }
-            ]
+            "image": "pics/angkor.png"
         },
         {
             "id": 4,
-            "title": "Federer won 19th GS title at Wimbledon 2017",
+            "title": "Bulgaria and its wonders",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
             "fullText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi  porro aut odit corrupti, odio fuga est sequi dolor optio corporis quasi enim voluptates modi necessitatibus? Ullam eligendi recusandae facere voluptatibus dicta unde deleniti sit, doloremque architecto? Sed error deserunt ut magnam sapiente dolore provident voluptates iusto ipsa, qui eveniet facilis asperiores repellendus neque fuga? Sint repellendus rem delectus. Illo molestiae magnam eveniet consequatur ratione! Reiciendis ducimus magni ullam necessitatibus voluptates rerum dolore esse placeat corrupti ad, minus illo soluta, iure ipsam fugiat amet aut. ",
             "createdAt": "2016-12-31T11:31:13.840Z",
-            "image": "pics/rila.png",
-            "image-small": "images/tennis-news-4-small.jpg",
-            "comments": [{
-                    "name": "Petar",
-                    "email": "petraka@abv.bg",
-                    "message": "Well Nadal is better on claycourt but probably Federer is GOAT"
-                },
-                {
-                    "name": "Stefan",
-                    "email": "stefan@abv.bg",
-                    "message": "But Soderling is a great server and beat Nadal in RG 2009"
-                }
-            ]
+            "image": "pics/rila.png"
         }
     ],
 
@@ -138,50 +92,48 @@
     "media": [{
             "id": "1",
             "imageUrl": "pics/media-img1.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "CLimb the Musala peak in Bulgaria now!!!"
         },
         {
             "id": "2",
             "imageUrl": "pics/media-img2.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "Visit white sand beaches at the Red Sea coast"
         },
         {
             "id": "3",
             "imageUrl": "pics/media-img3.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "SKi on the slopes in BAnsko, Bulgaria"
         },
         {
             "id": "4",
             "imageUrl": "pics/media-img1.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "CLimb the Musala peak in Bulgaria now!!!"
         },
         {
             "id": "5",
             "imageUrl": "pics/media-img2.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "CLimb the Musala peak in Bulgaria now!!!"
         },
         {
             "id": "6",
             "imageUrl": "pics/media-img3.png",
-            "description": "Juan Monaco is the greatest one of all time"
+            "description": "CLimb the Musala peak in Bulgaria now!!!"
         }
     ],
 
     "post": [{
 
-        "id": "19",
-        "title": "Peru in December",
+        "title": "Cairo in December",
         "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, laboriosam laborum exercitationem! Natus voluptatum vel labore, assumenda! Molestias nisi ",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, Ipsum passages",
-
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         "date": "June 16, 2017",
         "image": "pics/post-pic.png",
-        "category": "Peru",
+        "category": "Egypt",
         "author": "Todor",
         "comments": [{
-            "author": "Ivo Petrov",
+            "author": "Petar Iliev",
             "date": "October 1, 2017",
-            "text": "PEru is excellent all the year through. DEfinitely GO!!!"
+            "text": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan!!!"
         }]
 
     }],
@@ -189,5 +141,32 @@
         "author": "Ivo Petrov",
         "date": "October 1, 2017",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has"
-    }
+    },
+    "blogArticles": [{
+            "id": 1,
+            "title": "Tour in Peru",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis... ",
+            "date": "October 1, 2017",
+            "author": "Hristo",
+            "image": "pics/trip1.png",
+            "category": "Egypt"
+
+        },
+        {
+            "id": 2,
+            "title": "How far is the SPhynx",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis... ",
+            "date": "December 1, 2016",
+            "author": "Penko",
+            "image": "pics/trip2.png"
+        },
+        {
+            "id": 3,
+            "title": "Diving in the Red Sea",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis... ",
+            "date": "March 20, 2016",
+            "author": "Ivaila",
+            "image": "pics/trip3.png"
+        }
+    ]
 }

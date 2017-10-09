@@ -29,6 +29,9 @@ class DataService {
     getComments() {
         return requester.getJSON('api/comments')
     }
+    getBlog() {
+        return requester.getJSON('api/blogArticles')
+    }
 }
 const dataService = new DataService();
 export { dataService };

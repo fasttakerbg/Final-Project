@@ -1,5 +1,4 @@
-<link rel="stylesheet" type="text/css" href="./styles/post.css">
-{{#post.result}}
+<link rel="stylesheet" type="text/css" href="./styles/post.css"> {{#post.result}}
 <!-- Start of Navigation -->
 <nav>
     <header>
@@ -21,7 +20,7 @@
                 </div>
             </div>
 
-            <a class="top-header-logo" href="/">
+            <a class="top-header-logo" href="#/home">
                 <img src="./pics/logo.png" class="top-header-logo-img">
                 <div class="top-header-logo-text-container">
                     <span class="top-header-logo-text">Chameleon</span>
@@ -30,20 +29,20 @@
             </a>
 
             <ul class="top-header-nav" id="mobile-menu">
-                <li><a href="#" class="first-el">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Page Templates</a></li>
-                <li><a href="#">Shortcodes</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#/home" class="first-el">Home</a></li>
+                <li><a href="#/home">About</a></li>
+                <li><a href="#/home">Contact</a></li>
+                <li><a href="#/blog">Page Templates</a></li>
+                <li><a href="#/blog">Shortcodes</a></li>
+                <li><a href="#/blog">Blog</a></li>
             </ul>
-           <a href="javascript:void(0);" style="font-size:15px;" class="top-header-display-icon" onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="top-header-display-icon" onclick="myFunction()">&#9776;</a>
             <div class="top-header-currentPage">
 
-                Home >> {{category}}>> <span>{{title}}</span>
+                <a href="#/">Home</a> >> <a href="#/blog">{{category}}</a> >> <span>{{title}}</span>
 
             </div>
-             
+
         </div>
 
     </header>
@@ -63,38 +62,38 @@
     <div class="main-content container">
         <div class="row main-content-comment">
             <div class="col-md-8 col-sm-8 main-content-left">
-                
-                <h4 class="article__title">Posted by  <strong>{{author}}</strong> on {{date}} in <strong>{{category}}</strong> | {{comments.length}} Comment</h4>
+
+                <h4 class="article__title">Posted by <strong>{{author}}</strong> on {{date}} in <strong>{{category}}</strong> | {{comments.length}} Comment</h4>
                 <article>
 
                     <img src={{image}} class="pull-left img-responsive  img-thumbnail  ">
 
                     <p>
-                        {{text}} 
+                        {{text}}
                     </p>
 
 
 
                 </article>
-             
+
                 <div class="row">
                     <div class="col-md-12 main-content-left main-comment ">
                         <h1>{{comments.length}} Comment</h1>
-                        {{/post.result}}   
+                        {{/post.result}}
                         <div class="main-comment-container">
-                            
+
                             <div>
                                 <img src="./pics/profile-pic.png" alt="post img" class="pull-left img-responsive img-thumbnail ">
                                 <p class="main-comment-date pull-right"> {{comments.result.date}}</p>
                                 <h3 class=" main-comment-author media-heading">{{comments.result.author}}</h3>
                                 <article>
                                     <p>
-                                        {{comments.result.text}} {{!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It has --}}
+                                        {{comments.result.text}} {{!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                        a type specimen book. It has --}}
 
                                     </p>
                                 </article>
-                                <a class="btn btn-default btn-sm pull-right main-comment-btn">Read More</a>
+                                <a class="btn btn-default btn-sm pull-right main-comment-btn" href="#/blog">Read More</a>
                             </div>
                             {{!-- {{/comments.result}} --}}
                         </div>
@@ -104,15 +103,16 @@
                                     <div>
 
                                         <img src="./pics/profile-pic.png" alt="post img" class="pull-left img-responsive img-thumbnail ">
-                                        <p class="main-comment-date pull-right"> 13 Aug 2017</p>
-                                        <h3 class=" main-comment-author media-heading">Todor</h3>
+                                        <p class="main-comment-date pull-right"> {{post.result.[0].comments.[0].date}}</p>
+                                        {{!-- {{blogArticles.result.[0].category}} --}}
+                                        <h3 class=" main-comment-author media-heading">{{post.result.[0].comments.[0].author}}</h3>
                                         <article>
                                             <p>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan
+                                               {{post.result.[0].comments.[0].text}}
 
                                             </p>
                                         </article>
-                                        <a class="btn btn-default btn-sm pull-right main-comment-btn">Read More</a>
+                                        <a class="btn btn-default btn-sm pull-right main-comment-btn" href="#/blog">Read More</a>
                                     </div>
                                 </div>
                             </div>

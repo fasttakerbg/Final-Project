@@ -11,7 +11,7 @@ SystemJS.config({
         'router': './configs/router-config.js',
         // 'mobileMenu': './scripts/modules/mobile-menu.js',
         // 'modal': './scripts/modules/modal.js',
-        // 'validator': './js/helpers/validator.js',
+        // 'validator': './js/helpers/validator.js'
 
 
         // 'htmlHandler': './scripts/helpers/html-handler.js',

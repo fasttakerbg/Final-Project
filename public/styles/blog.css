@@ -1,0 +1,223 @@
+.top-header {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Top Header right top panel section search & social icons */
+
+.top-header-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-header-social-icons {
+    padding-right: 20px
+}
+
+.top-header-search-input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: rgb(163, 163, 163);
+    text-shadow: 1px 1px #fff;
+    background-image: linear-gradient( rgb(238, 238, 238), rgb(249, 249, 249) 50%);
+    width: 160px;
+    height: 28px;
+    border: none;
+    box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.35) inset;
+    margin-right: -18px;
+    padding-left: 10px;
+}
+
+.top-header-search-btn {
+    position: relative;
+    top: 5px;
+    right: 15px
+}
+
+
+/* Top Header left side logo section  */
+
+.top-header-logo {
+    padding-left: 35px;
+    padding-top: 3px
+}
+
+.top-header-logo-img {
+    float: left;
+}
+
+.top-header-logo-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header-logo-text {
+    font-family: 'Kreon-Light';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    padding-left: 5px
+}
+
+.top-header-slogan-text {
+    text-transform: uppercase;
+    font-family: 'Droid-Sans';
+    font-size: 13.5px;
+    color: rgb(122, 161, 169);
+    margin-top: -10px;
+    padding-left: 9px;
+}
+
+
+/* Top Header Nav */
+
+.top-header-nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: -22px
+}
+
+.top-header-nav li {
+    float: right;
+    font-family: 'Kreon-Light';
+    font-size: 15px;
+    font-weight: 550;
+    padding-right: 18px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.top-header-nav:last-child {
+    padding-right: 20px
+}
+
+.top-header-nav .first-el {
+    color: rgb(67, 124, 139);
+    font-weight: 600;
+}
+
+
+/* Top header current page position */
+
+.top-header-currentPage {
+    margin-top: 15px;
+    font-family: 'Kreon-light';
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    padding-left: 48px
+}
+
+.top-header-currentPage span {
+    color: rgb(89, 89, 89);
+    font-weight: 580
+}
+
+
+/* Jumbotron settings */
+
+.main-jumbotron-section {
+    height: 130px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    vertical-align: center;
+    background-image: linear-gradient( rgb(248, 248, 248), rgb(255, 255, 255));
+    border: 0.1px solid transparent;
+}
+
+.main-jumbotron-section h2 {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+}
+
+.main-jumbotron-section p {
+    font-family: 'Kreon-Light';
+    font-weight: 500;
+    color: rgb(175, 175, 175);
+    margin-top: -5px;
+    padding-bottom: 18px
+}
+
+.section-separator {
+    /* margin-top: 55px; */
+    width: 890px;
+    position: relative;
+    top: -20px
+}
+
+
+/* Main content settings */
+
+.card-entry-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.card-img-top {
+    max-width: 200px;
+    max-height: 150px;
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.card-entry-text {
+    margin: 10px;
+    font-family: 'Droid-Sans';
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+}
+
+.card-entry-text h4 {
+    font-family: 'Kreon-Light';
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+}
+
+.card-footer-btn {
+    margin-top: 5px;
+    font-family: 'Kreon-Light';
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    font-weight: 700;
+}
+
+@media (max-width: 1050px) and (min-width: 800px) {}
+
+@media (max-width: 799px) and (min-width: 500px) {
+    .main-jumbotron-section {
+        margin-top: 40px;
+        margin-bottom: 0px
+    }
+    .main-jumbotron-section h2 {
+        font-size: 1.8em
+    }
+    .main-jumbotron-section p {
+        font-size: 1.4em
+    }
+}
+
+@media (max-width: 499px) {
+    .card-entry-container {
+        display: block
+    }
+    .main-jumbotron-section {
+        margin-top: 30px;
+        margin-bottom: -20px
+    }
+    .main-jumbotron-section h2 {
+        font-size: 1.5em
+    }
+    .main-jumbotron-section p {
+        display: none
+    }
+}

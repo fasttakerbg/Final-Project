@@ -517,6 +517,7 @@
     .media__prev {
         left: -1em;
         background: url("../pics/media-left-arrow.png");
+        cursor: pointer
     }
     
     .media__next {

@@ -59,6 +59,24 @@ class Controller {
             console.log(post.title)
         })
     }
+
+    getBlog() {
+        let promises = [
+            dataService.getBlog(),
+
+
+        ];
+        Promise.all(promises).then((values) => {
+            let blogArticles = values[0];
+
+
+            handlebarsHandler.createTemplate('blog', '#template-content', {
+                blogArticles: blogArticles
+
+            })
+
+        })
+    }
 }
 
 const controller = new Controller();

@@ -19,6 +19,9 @@
     },
     "homepage": "https://github.com/fasttakerbg/Final-Project#readme",
     "dependencies": {
+        "babel-eslint": "^8.0.1",
+        "eslint": "^4.8.0",
+        "eslint-config-google": "^0.9.1",
         "express": "^4.16.1",
         "gulp": "^3.9.1",
         "lowdb": "^1.0.0"

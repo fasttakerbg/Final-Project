@@ -17,9 +17,9 @@ module.exports = (db) => {
         const carousel = getCarouselContentFromDB();
 
         res.send({
-            result: carousel
+            result: carousel,
         });
-    };
+    }
 
 
 
@@ -86,10 +86,19 @@ module.exports = (db) => {
         res.send({
             result: comments
         });
+    }
 
 
-    };
+    function getBlogArticlesFromDB() {
+        return db.get('blogArticles').value();
+    }
 
+    function getBlogArticles(req, res) {
+        const blogArticles = getBlogArticlesFromDB();
+        res.send({
+            result: blogArticles
+        });
+    }
 
     // function getTennisNews(req, res) {
     //     const news = getNewsFromDB()['tennisNews'];
@@ -107,5 +116,6 @@ module.exports = (db) => {
         getMedia,
         getPost,
         getComments,
+        getBlogArticles
     };
 };

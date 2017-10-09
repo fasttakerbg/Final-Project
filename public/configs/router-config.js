@@ -16,8 +16,11 @@ class Router {
 
             //Post Page
             this.get('#/post', controller.getPost);
-            // this.get('#/account/sign-up', accountController.loadSignUpPage);
 
+
+            // Blog PAge
+            this.get('#/blog', controller.getBlog);
+            // this.get('#/blog/:id', (sammy) => controller.getCategoryNews(sammy));
             // this.post('#/account/sign-in', accountController.signIn);
             // this.post('#/account/sign-up', accountController.signUp);
 
