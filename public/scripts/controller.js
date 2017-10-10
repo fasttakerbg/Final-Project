@@ -2,9 +2,8 @@ import { dataService } from 'dataService'
 import { handlebarsHandler } from 'handlebarsHandler'
 
 class Controller {
-
     getHome() {
-        let promises = [
+        const promises = [
             dataService.carouselContent(),
             dataService.latestSportNews(),
             dataService.recentPosts(),
@@ -15,10 +14,10 @@ class Controller {
             // dataService.bulgariaInfo(),
         ];
         Promise.all(promises).then((values) => {
-            let carouselContent = values[0];
-            let latestSportNews = values[1];
-            let recentPosts = values[2];
-            let media = values[3];
+            const carouselContent = values[0];
+            const latestSportNews = values[1];
+            const recentPosts = values[2];
+            const media = values[3];
             // let peruInfo = values[0];
             // let egyptInfo = values[1];
             // let cambodiaInfo = values[2];
@@ -28,54 +27,45 @@ class Controller {
                 carouselContent: carouselContent,
                 latestSportNews: latestSportNews,
                 recentPosts: recentPosts,
-                media: media
-                    // peruInfo: peruInfo,
-                    // egyptInfo: egyptInfo,
-                    // cambodiaInfo: cambodiaInfo,
-                    // bulgariaInfo: bulgariaInfo
+                media: media,
             });
-        })
-
+        });
     }
 
     getPost() {
-        let promises = [
+        const promises = [
             dataService.loadPost(),
             dataService.recentPosts(),
             dataService.getComments(),
 
         ];
         Promise.all(promises).then((values) => {
-            let post = values[0];
-            let recentPosts = values[1];
-            let comments = values[2];
+            const post = values[0];
+            const recentPosts = values[1];
+            const comments = values[2];
 
             handlebarsHandler.createTemplate('post', '#template-content', {
                 recentPosts: recentPosts,
                 post: post,
-                comments: comments
-
-            })
-            console.log(post.title)
-        })
+                comments: comments,
+            });
+        });
     }
 
     getBlog() {
-        let promises = [
+        const promises = [
             dataService.getBlog(),
 
 
         ];
         Promise.all(promises).then((values) => {
-            let blogArticles = values[0];
+            const blogArticles = values[0];
 
 
             handlebarsHandler.createTemplate('blog', '#template-content', {
-                blogArticles: blogArticles
-
-            })
-
-        })
+                blogArticles: blogArticles,
+            });
+        });
     }
 }
 

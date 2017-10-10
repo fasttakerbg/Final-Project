@@ -1,17 +1,7 @@
-// const _ = require("lodash");
-
 module.exports = (db) => {
-    // db.defaults({
-    //         news: [],
-    //         blog: []
-    //     })
-    //     .value();
-
-    // Get
     function getCarouselContentFromDB() {
         return db.get('carouselContent').value();
     }
-
 
     function getCarouselContent(req, res) {
         const carousel = getCarouselContentFromDB();
@@ -21,9 +11,6 @@ module.exports = (db) => {
         });
     }
 
-
-
-
     function getLatestSportNewsFromDB() {
         return db.get('latestSportNews').value();
     }
@@ -31,12 +18,9 @@ module.exports = (db) => {
     function getLatestSportNews(req, res) {
         const news = getLatestSportNewsFromDB();
         res.send({
-            result: news
+            result: news,
         });
-
-
-    };
-
+    }
 
     function getRecentPostsFromDB() {
         return db.get('recentPosts').value();
@@ -45,11 +29,9 @@ module.exports = (db) => {
     function getRecentPosts(req, res) {
         const posts = getRecentPostsFromDB();
         res.send({
-            result: posts
+            result: posts,
         });
-
-
-    };
+    }
 
     function getMediaFromDB() {
         return db.get('media').value();
@@ -58,11 +40,9 @@ module.exports = (db) => {
     function getMedia(req, res) {
         const media = getMediaFromDB();
         res.send({
-            result: media
+            result: media,
         });
-
-
-    };
+    }
 
     function getPostFromDB() {
         return db.get('post').value();
@@ -71,11 +51,9 @@ module.exports = (db) => {
     function getPost(req, res) {
         const post = getPostFromDB();
         res.send({
-            result: post
+            result: post,
         });
-
-
-    };
+    }
 
     function getCommentsFromDB() {
         return db.get('comments').value();
@@ -84,7 +62,7 @@ module.exports = (db) => {
     function getComments(req, res) {
         const comments = getCommentsFromDB();
         res.send({
-            result: comments
+            result: comments,
         });
     }
 
@@ -96,18 +74,9 @@ module.exports = (db) => {
     function getBlogArticles(req, res) {
         const blogArticles = getBlogArticlesFromDB();
         res.send({
-            result: blogArticles
+            result: blogArticles,
         });
     }
-
-    // function getTennisNews(req, res) {
-    //     const news = getNewsFromDB()['tennisNews'];
-    //     res.send({
-    //         result: news
-    //     });
-    // };
-
-
 
     return {
         getCarouselContent,
@@ -116,6 +85,6 @@ module.exports = (db) => {
         getMedia,
         getPost,
         getComments,
-        getBlogArticles
+        getBlogArticles,
     };
 };

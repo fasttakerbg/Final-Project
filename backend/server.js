@@ -1,11 +1,8 @@
 const express = require('express');
-const path = require("path");
+const path = require('path');
 
 const port = process.env.PORT || 3000; // for Heroku 
 const app = express();
-
-
-
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
@@ -23,14 +20,13 @@ app.get('/', (req, res) => {
 const controller = require('./controller')(db);
 
 app.get('/api/carouselContent', controller.getCarouselContent);
-// app.get('/api/news/tennisnews', newsController.getTennisNews);
 app.get('/api/latestSportNews', controller.getLatestSportNews);
-// app.get('/api/getFromBlog', newsController.getRecentFromBlog);
 app.get('/api/recentPosts', controller.getRecentPosts);
 app.get('/api/media', controller.getMedia);
 app.get('/api/post', controller.getPost);
 app.get('/api/comments', controller.getComments);
 app.get('/api/blogArticles', controller.getBlogArticles);
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
