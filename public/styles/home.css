@@ -355,7 +355,7 @@
         margin: -1.67em 0 0 -1.67em;
         width: 40px;
         height: 40px;
-        background: url("../pics/open-trip-img.png");
+        background: url("../pics/open-trip-img.jpg");
         visibility: hidden;
     }
     /* Peter Blog Media middle section  */
@@ -455,7 +455,7 @@
         margin-left: -1.20em;
         width: 33px;
         height: 33px;
-        background: url("../pics/media-magnifying-glass.png");
+        background-image: url("../pics/media-magnifying-glass.jpg");
         visibility: hidden;
     }
     
@@ -469,7 +469,7 @@
         width: 33px;
         height: 33px;
         visibility: hidden;
-        background: url("../pics/media-hover-video-icon.png");
+        background-image: url("../pics/media-hover-video-icon.jpg");
     }
     
     .media__description {
@@ -497,7 +497,7 @@
         height: 0.67em;
         bottom: -0.67em;
         left: 6.67em;
-        background: url("../pics/media-arrow.png") no-repeat;
+        background-image: url("../pics/media-arrow.jpg") no-repeat;
     }
     
     .media__nav a {
@@ -516,13 +516,13 @@
     
     .media__prev {
         left: -1em;
-        background: url("../pics/media-left-arrow.png");
+        background-image: url("../pics/media-left-arrow.jpg");
         cursor: pointer
     }
     
     .media__next {
         right: -1em;
-        background: url("../pics/media-right-arrow.png");
+        background-image: url("../pics/media-right-arrow.jpg");
     }
     
     @media (max-width: 1050px) and (min-width: 800px) {
@@ -631,7 +631,6 @@
             display: inline-block;
             z-index: 100;
             position: absolute;
-            top: 0px
         }
         .carousel-caption {
             display: none;

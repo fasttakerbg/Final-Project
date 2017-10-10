@@ -23,13 +23,18 @@
 
 /* General element settings */
 
+html {
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-image: url('./pics/background.png');
+    background-image: url('./pics/background.jpg');
     box-shadow: 1px black;
 }
 
@@ -74,12 +79,6 @@ button,
 .btn:hover {
     background-color: lavender;
 }
-
-
-/* img {
-    max-width: 100%;
-    height: auto
-} */
 
 
 /* General Footer settings */

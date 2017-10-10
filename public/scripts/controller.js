@@ -1,5 +1,5 @@
-import { dataService } from 'dataService'
-import { handlebarsHandler } from 'handlebarsHandler'
+import { dataService } from 'dataService';
+import { handlebarsHandler } from 'handlebarsHandler';
 
 class Controller {
     getHome() {

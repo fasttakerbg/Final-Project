@@ -24,5 +24,6 @@ class HandlebarsHandler {
             }).catch(console.log);
     }
 }
+
 const handlebarsHandler = new HandlebarsHandler();
 export { handlebarsHandler };
