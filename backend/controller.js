@@ -11,14 +11,14 @@ module.exports = (db) => {
         });
     }
 
-    function getLatestSportNewsFromDB() {
-        return db.get('latestSportNews').value();
+    function getCountryInfoFromDB() {
+        return db.get('countryInfo').value();
     }
 
-    function getLatestSportNews(req, res) {
-        const news = getLatestSportNewsFromDB();
+    function getCountryInfo(req, res) {
+        const info = getCountryInfoFromDB();
         res.send({
-            result: news,
+            result: info,
         });
     }
 
@@ -80,7 +80,7 @@ module.exports = (db) => {
 
     return {
         getCarouselContent,
-        getLatestSportNews,
+        getCountryInfo,
         getRecentPosts,
         getMedia,
         getPost,

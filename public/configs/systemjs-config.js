@@ -9,7 +9,6 @@ SystemJS.config({
         // app scripts 
         'main': './scripts/main.js',
         'router': './configs/router-config.js',
-        // 'mobileMenu': './scripts/modules/mobile-menu.js',
         'requester': './scripts/helpers/requester.js',
         'handlebarsHandler': './scripts/helpers/handlebars-handler.js',
         'dataService': './scripts/data-service.js',

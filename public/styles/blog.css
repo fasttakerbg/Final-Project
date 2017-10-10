@@ -312,6 +312,12 @@
     .main-jumbotron-section p {
         display: none
     }
+    .page-theme {
+        font-size: 1.6em
+    }
+    .page-theme small {
+        font-size: 0.6em
+    }
 }
 
 @media (max-width: 320px) {

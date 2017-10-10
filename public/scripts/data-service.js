@@ -9,8 +9,8 @@ class DataService {
         return requester.getJSON('/api/carouselContent');
     }
 
-    latestSportNews() {
-        return requester.getJSON('api/latestSportNews');
+    countryInfo() {
+        return requester.getJSON('api/countryInfo');
     }
 
     recentPosts() {

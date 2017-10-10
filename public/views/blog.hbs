@@ -28,12 +28,12 @@
             </a>
 
             <ul class="top-header-nav" id="mobile-menu">
-                <li><a href="#" class="first-el">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#/home" class="first-el">Home</a></li>
+                <li><a href="#/blog">About</a></li>
+                <li><a href="#/home">Contact</a></li>
                 <li><a href="#">Page Templates</a></li>
                 <li><a href="#">Shortcodes</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#/blog">Blog</a></li>
             </ul>
              <a href="javascript:void(0);" style="font-size:15px;" class="top-header-display-icon" onclick="myFunction()">&#9776;</a>
             <div class="top-header-currentPage">
@@ -65,14 +65,14 @@
             <!-- Blog Entries Column -->
             <div class="col-md-8 col-md-offset-1">
 
-                <h2 class="my-4">Page Heading
-                    <small>Secondary Text</small>
+                <h2 class="my-4 page-theme">{{blogArticles.result.[0].category}}
+                    <small>Blog Section</small>
                 </h2>
 
                 <!-- Blog Post -->
                 {{#blogArticles.result}}
                 <div class="card-entry-container ">
-                    <img class="card-img-top img-thumbnail img-responsive" src="./pics/post-pic.png" alt="Card image cap">
+                    <img class="card-img-top img-thumbnail img-responsive" src={{image}} alt="Card image cap">
                     <div class="card-entry-text">
                         <h4 class="card-title">{{title}}</h4>
                         <p class="card-text">{{text}}</p>

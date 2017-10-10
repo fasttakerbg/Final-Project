@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 const controller = require('./controller')(db);
 
 app.get('/api/carouselContent', controller.getCarouselContent);
-app.get('/api/latestSportNews', controller.getLatestSportNews);
+app.get('/api/countryInfo', controller.getCountryInfo);
 app.get('/api/recentPosts', controller.getRecentPosts);
 app.get('/api/media', controller.getMedia);
 app.get('/api/post', controller.getPost);

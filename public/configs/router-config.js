@@ -3,9 +3,6 @@ import { controller } from 'controller';
 class Router {
     start() {
         const sammy = Sammy(function() {
-            // this.before({}, () => {
-            //     headerController.initialize();
-            // });
             // Home Page
             this.get('#/', (sammy) => sammy.redirect('#/home'));
             this.get('#/home', controller.getHome);
